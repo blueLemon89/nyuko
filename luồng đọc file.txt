@@ -1,0 +1,10 @@
+tạo WorkBook = fileInPut
+tạo sheet = WorkBook.getSheet("file_name");
+tạo Iterator(Row) = sheet.iterator(); // duyet cac phan tu tu dau den cuoi
+
+tạo 1 list schedule để chứa dữ liệu
+
+1 sheet - n Row ( duyệt theo chiều từ trên xuống)
+1 Row - n Cell (duyệt theo chiều từ trái sang phải)
+
+tạo rowNumber = 0; để đếm phần tử row trong sheet; rowNumber == 0 là header

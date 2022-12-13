@@ -1,0 +1,9 @@
+Từ giao diện người dùng -> chọn file upload(import file) -> kiểm tra tên(<=250 định  && dạng file XLSX && kích thước tệp <=10MB)
+-> nếu sai -> thông báo lỗi -> import lại
+
+-> nếu đúng -> đẩy dữ liệu về ScheduleController -> gọi đến hàm xử lý của ScheduleService -> kiểm tra dữ liệu trong file
+
+-> nếu không đúng định dạng -> add dữ liệu vào list scheduleError -> gửi lại dữ liệu cho ScheduleController -> Đẩy dữ liệu lên UI
+
+-> nếu đúng -> lưu dữ liệu vào DB
+
